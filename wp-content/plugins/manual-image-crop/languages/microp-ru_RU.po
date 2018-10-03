@@ -1,0 +1,166 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Manual Image Crop RU 1.0\n"
+"POT-Creation-Date: 2014-08-03 17:12+0400\n"
+"PO-Revision-Date: 2014-08-03 17:34+0400\n"
+"Last-Translator: Misha Rudrastyh <true@truemisha.ru>\n"
+"Language-Team: Misha Rudrastyh <true@truemisha.ru>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_attr__;esc_attr_e;esc_html__;"
+"esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/ManualImageCrop.php:58
+msgid "Crop"
+msgstr "Задать отображаемые области"
+
+#: lib/ManualImageCrop.php:67
+msgid "Crop featured image"
+msgstr "Задать отображаемую область"
+
+#: lib/ManualImageCrop.php:94 lib/ManualImageCrop.php:121
+msgid "Crop Image"
+msgstr "Задать отображаемые области"
+
+#: lib/ManualImageCropEditorWindow.php:31
+msgid "Pick the image size:"
+msgstr "Для&nbsp;размера:"
+
+#: lib/ManualImageCropEditorWindow.php:41
+#: lib/ManualImageCropSettingsPage.php:115
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+#: lib/ManualImageCropEditorWindow.php:42
+#: lib/ManualImageCropSettingsPage.php:116
+msgid "Medium"
+msgstr "Средний"
+
+#: lib/ManualImageCropEditorWindow.php:43
+#: lib/ManualImageCropSettingsPage.php:117
+msgid "Large"
+msgstr "Большой"
+
+#: lib/ManualImageCropEditorWindow.php:44
+#: lib/ManualImageCropSettingsPage.php:118
+msgid "Full Size"
+msgstr "Полный"
+
+#: lib/ManualImageCropEditorWindow.php:142
+msgid "Original picture dimensions:"
+msgstr "Оригинальное разрешение изображения:"
+
+#: lib/ManualImageCropEditorWindow.php:143
+msgid "Target picture dimensions:"
+msgstr "Данный размер:"
+
+#: lib/ManualImageCropEditorWindow.php:143
+msgid "Soft proportional crop mode"
+msgstr "С изменением пропорций"
+
+#: lib/ManualImageCropEditorWindow.php:143
+msgid "Hard crop mode"
+msgstr "Без изменения пропорций"
+
+#: lib/ManualImageCropEditorWindow.php:147
+msgid "New image:"
+msgstr "После:"
+
+#: lib/ManualImageCropEditorWindow.php:154
+msgid "Previous image:"
+msgstr "До:"
+
+#: lib/ManualImageCropEditorWindow.php:162
+msgid "Crop it!"
+msgstr "Обрезать!"
+
+#: lib/ManualImageCropEditorWindow.php:169
+msgid "Target JPEG Quality"
+msgstr "Качество JPEG на выходе"
+
+#: lib/ManualImageCropEditorWindow.php:170
+#: lib/ManualImageCropSettingsPage.php:154
+msgid "100 (best quality, biggest file)"
+msgstr "100 (наилучшее)"
+
+#: lib/ManualImageCropEditorWindow.php:171
+#: lib/ManualImageCropSettingsPage.php:155
+msgid "80 (very high quality)"
+msgstr "80"
+
+#: lib/ManualImageCropEditorWindow.php:172
+#: lib/ManualImageCropSettingsPage.php:156
+msgid "70 (high quality)"
+msgstr "70"
+
+#: lib/ManualImageCropEditorWindow.php:173
+#: lib/ManualImageCropSettingsPage.php:157
+msgid "60 (good)"
+msgstr "60"
+
+#: lib/ManualImageCropEditorWindow.php:174
+#: lib/ManualImageCropSettingsPage.php:158
+msgid "50 (average)"
+msgstr "50"
+
+#: lib/ManualImageCropEditorWindow.php:175
+#: lib/ManualImageCropSettingsPage.php:159
+msgid "30 (low)"
+msgstr "30"
+
+#: lib/ManualImageCropEditorWindow.php:176
+#: lib/ManualImageCropSettingsPage.php:160
+msgid "10 (very low, smallest file)"
+msgstr "10 (очень плохое)"
+
+#: lib/ManualImageCropEditorWindow.php:183
+msgid "Generate Retina/HiDPI (@2x):"
+msgstr "Сгенерировать Ретину/HiDPI (@2x):"
+
+#: lib/ManualImageCropEditorWindow.php:188
+msgid "The image has been cropped successfully"
+msgstr "Готово. Отображаться будет указанная вами область."
+
+#: lib/ManualImageCropEditorWindow.php:189
+msgid "An Error has occured. Please try again or contact plugin's author."
+msgstr "Возникла ошибка. Пожалуйста, попробуйте ещё раз."
+
+#: lib/ManualImageCropEditorWindow.php:232
+msgid "Compatible"
+msgstr "Поддерживаемый"
+
+#: lib/ManualImageCropEditorWindow.php:234
+msgid "Source too small"
+msgstr "Исходник слишком мал"
+
+#: lib/ManualImageCropSettingsPage.php:125
+msgid "Size"
+msgstr "Размер"
+
+#: lib/ManualImageCropSettingsPage.php:126
+msgid "Visible"
+msgstr "Отображать в инструменте?"
+
+#: lib/ManualImageCropSettingsPage.php:127
+msgid "Default JPEG Quality"
+msgstr "Качество JPEG по умолчанию"
+
+#: lib/ManualImageCropSettingsPage.php:128
+msgid "Custom Label"
+msgstr "Название в инструменте"
+
+#: lib/ManualImageCropSettingsPage.php:150
+msgid "Yes"
+msgstr "Да"
+
+#: lib/ManualImageCropSettingsPage.php:151
+msgid "No"
+msgstr "Нет"
