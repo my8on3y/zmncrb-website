@@ -1,7 +1,6 @@
 $(function() {
 	// Custom JS
 
-
 	// site-map navigator
 	$(document).ready(function(){
 		$("#site-map-toggle-button").on('click', function(){
@@ -21,8 +20,19 @@ $(function() {
 			$(this).children('#nav-menu > li > .sub-menu').fadeOut($setInterval);
 		});
 	});
+
+
+	window.onload = function(){
+		$('#select-body').mCustomScrollbar({
+			theme: "minimal-dark",
+			scrollInertia: 900
+		});
+		
+	};
 	
+
 });
+
 
 	
 

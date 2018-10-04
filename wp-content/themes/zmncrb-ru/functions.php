@@ -124,13 +124,15 @@ function zmncrb_ru_scripts() {
 
 	wp_enqueue_style( 'zmncrb-ru-style-min.css', get_stylesheet_directory_uri() . '/css/main.min.css');
 
+	wp_enqueue_script( 'wp-jQuery', get_template_directory_uri() . '/libs/jquery/dist/jquery.min.js', array(), '');
+
+	wp_enqueue_style( 'malihu-custom-scrollbar-plugin-master', get_stylesheet_directory_uri() . '/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css');
+
+	wp_enqueue_script( 'malihu-custom-scrollbar-plugin-master.js', get_template_directory_uri() . '/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js', array(), '');
+
 	wp_enqueue_script( 'zmncrb-ru-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'common-js', get_template_directory_uri() . '/js/common.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'wp-jQuery', get_template_directory_uri() . '/libs/jquery/dist/jquery.min.js', array(), '');
-
-	wp_enqueue_script( 'parallax.js', get_template_directory_uri() . '/libs/parallax/parallax.js', array(), '');
 
 	wp_enqueue_script( 'zmncrb-ru-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

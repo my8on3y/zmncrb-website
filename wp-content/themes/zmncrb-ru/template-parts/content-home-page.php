@@ -8,7 +8,6 @@
  */
 
 ?>
-		
 		<div class="site-map" id="site-map">
 				<div id="site-map-toggle-button">Навигация по странице</div>
 					<span class="--like-h2"><i class="fa fa-list-ul"></i> Навигация</span>
@@ -51,7 +50,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="content-block parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() . '/img/tsrb-poliklinnika.jpg' ?>">
+		<section id="parral" class="content-block">
 			<div class="__cover-block"></div>
 			<div class="container">
 				<div class="row">
@@ -130,7 +129,7 @@
 					</div>
 				</div>
 			</section> 
-
+		
 		<?php
 		the_content();
 		
