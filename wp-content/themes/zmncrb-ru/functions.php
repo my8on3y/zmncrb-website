@@ -124,17 +124,23 @@ function zmncrb_ru_scripts() {
 
 	wp_enqueue_style( 'zmncrb-ru-style-min.css', get_stylesheet_directory_uri() . '/css/main.min.css');
 
-	wp_enqueue_script( 'wp-jQuery', get_template_directory_uri() . '/libs/jquery/dist/jquery.min.js', array(), '');
+	wp_enqueue_script( 'wp-jQuery', get_template_directory_uri() . '/libs/jquery/dist/jquery.min.js', array(), '3.5', true);
 
 	wp_enqueue_style( 'malihu-custom-scrollbar-plugin-master', get_stylesheet_directory_uri() . '/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css');
 
-	wp_enqueue_script( 'malihu-custom-scrollbar-plugin-master.js', get_template_directory_uri() . '/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js', array(), '');
+	wp_enqueue_script( 'page-scroll-to-id.js', get_template_directory_uri() . '/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.js', array(), '20151216', true);
 
+	wp_enqueue_script( 'malihu-custom-scrollbar-plugin-master.js', get_template_directory_uri() . '/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'nicescroll.js', get_template_directory_uri() . '/libs/jquery.nicescroll-master/jquery.nicescroll.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'ScrollTrigger.min.js', get_template_directory_uri() . '/libs/scrollTrigger-master/ScrollTrigger.min.js', array(), '20151215', true );
+	
 	wp_enqueue_script( 'zmncrb-ru-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'common-js', get_template_directory_uri() . '/js/common.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'zmncrb-ru-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'common-js', get_template_directory_uri() . '/js/common.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

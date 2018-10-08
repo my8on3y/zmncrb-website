@@ -21,18 +21,50 @@ $(function() {
 		});
 	});
 
-
-	window.onload = function(){
-		$('#select-body').mCustomScrollbar({
-			theme: "minimal-dark",
-			scrollInertia: 900
-		});
-		
-	};
-	
-
 });
 
 
-	
+	// nice-scroll plugin 
+	$(document).ready(function(){
+		$(function() {  
+			$("body").niceScroll({
+				zindex: "auto",
+				scrollspeed: 200
+			});
+		});
+	});
+
+
+	// PageScroll2id plugin
+	(function($){
+		$(window).on("load",function(){
+			$("a[rel='m_PageScroll2id']").mPageScroll2id();
+		});
+	})(jQuery);
+
+
+// (function($){
+// 	$(window).on("load",function(){
+// 		$('body').mCustomScrollbar({
+// 			theme: 'minimal'
+// 		});
+// 	});
+// })(jQuery);
+
+	// Scroll trigger JS pkugin
+	document.addEventListener('DOMContentLoaded', function(){
+		var trigger = new ScrollTrigger({
+		  toggle: {
+			visible: 'visible',
+			hidden: 'invisible'
+		  },
+		  offset: {
+			x: 0,
+			y: 20
+		  },
+		  addHeight: true,
+		  once: true
+		}, document.body, window);
+	  });
+
 

@@ -13,7 +13,7 @@
 					<span class="--like-h2"><i class="fa fa-list-ul"></i> Навигация</span>
 					<ul>
 						<li><a href="#">О больнице</a></li>
-						<li><a href="#">Новости</a></li>
+						<li><a href="#news" rel='m_PageScroll2id'>Новости</a></li>
 						<li><a href="#">Схема проезда</a></li>
 						<li><a href="#">Министерство</a></li>
 						<li><a href="#">Что-то</a></li>
@@ -85,9 +85,9 @@
 		</section>
 
 		<!-- Вывод постов "новости" -->
-		<section class="news">
+		<section id="news" class="news" rel='m_PageScroll2id'>
 			<div class="container">
-				<div class="__section-separator"><i class="fa fa-paperclip"></i><h2 class="-a-word"> Новости</h2></div>
+				<div class="__section-separator"><h2 class="-a-word invisible" data-scroll><i class="fa fa-paperclip"></i> Новости</h2></div>
 				<?php $news_posts = get_posts( array(
 				'numberposts' => 4,
 				'category'    => 3,

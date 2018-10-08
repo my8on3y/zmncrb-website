@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body id="select-body" <?php body_class();?>>
+<body id="select-body" <?php body_class(); ?>>
 <header class="__header-section">
 
 <section class="top-nav-panel">
