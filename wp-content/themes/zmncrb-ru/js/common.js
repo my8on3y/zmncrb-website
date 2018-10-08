@@ -29,9 +29,20 @@ $(function() {
 		$(function() {  
 			$("body").niceScroll({
 				zindex: "auto",
-				scrollspeed: 200
+				scrollspeed: 200,
+				horizrailenabled: true,
+				oneaxismousemode: false,
+				cursoropacitymin: 0,
+				cursoropacitymax: 0.3
 			});
 		});
+	});
+	// Number animate
+	$(document).ready(function(){
+
+			window.customFunction = function() {
+				$('#lines').animateNumber({ number: 165 });
+			};		
 	});
 
 
@@ -54,17 +65,17 @@ $(function() {
 	// Scroll trigger JS pkugin
 	document.addEventListener('DOMContentLoaded', function(){
 		var trigger = new ScrollTrigger({
-		  toggle: {
-			visible: 'visible',
-			hidden: 'invisible'
-		  },
-		  offset: {
-			x: 0,
-			y: 20
-		  },
-		  addHeight: true,
-		  once: true
+			toggle: {
+			  visible: 'visible',
+			  hidden: 'invisible'
+			},
+			offset: {
+			  x: 0,
+			  y: 20
+			},
+			addHeight: true,
+			once: true
+		  }, document.body, window);
 		}, document.body, window);
-	  });
 
 

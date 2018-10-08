@@ -133,9 +133,11 @@ function zmncrb_ru_scripts() {
 	wp_enqueue_script( 'malihu-custom-scrollbar-plugin-master.js', get_template_directory_uri() . '/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'nicescroll.js', get_template_directory_uri() . '/libs/jquery.nicescroll-master/jquery.nicescroll.js', array(), '20151215', true );
-
+	
 	wp_enqueue_script( 'ScrollTrigger.min.js', get_template_directory_uri() . '/libs/scrollTrigger-master/ScrollTrigger.min.js', array(), '20151215', true );
 	
+	wp_enqueue_script( 'number-animate.js', get_template_directory_uri() . '/libs/aishek-jquery-animateNumber/jquery.animateNumber.min.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'zmncrb-ru-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'zmncrb-ru-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

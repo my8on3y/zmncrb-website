@@ -339,7 +339,6 @@ body h2 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  justify-content-height: 100%;
   background: #D93240;
   padding-top: 6px;
   padding-bottom: 10px;
@@ -646,11 +645,6 @@ body h2 {
 .news {
   position: relative;
 }
-
-.news .__section-separator {
-
-}
-
 
 .news .news-block {
   font-size: 10pt;

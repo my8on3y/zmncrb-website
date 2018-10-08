@@ -87,7 +87,7 @@
 		<!-- Вывод постов "новости" -->
 		<section id="news" class="news" rel='m_PageScroll2id'>
 			<div class="container">
-				<div class="__section-separator"><h2 class="-a-word invisible" data-scroll><i class="fa fa-paperclip"></i> Новости</h2></div>
+				<div class="__section-separator"><h2 class="-a-word" data-scroll="toggle(.visible, .invisible)"><i class="fa fa-paperclip"></i> Новости</h2></div>
 				<?php $news_posts = get_posts( array(
 				'numberposts' => 4,
 				'category'    => 3,
@@ -129,6 +129,15 @@
 					</div>
 				</div>
 			</section> 
+
+			<!-- Информация о составе -->
+			<section>
+				<div class="container">
+					<div class="row">
+						<p>This plugin only <span data-scroll data-scroll-showCallback="customFunction" data-scroll-hideCallback="customFunction('Invisible')" id="lines">0</span> lines of code.</p>
+					</div>
+				</div>
+			</section>
 		
 		<?php
 		the_content();
