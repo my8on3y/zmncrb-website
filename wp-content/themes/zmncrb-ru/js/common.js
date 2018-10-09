@@ -20,10 +20,9 @@ $(function() {
 			$(this).children('#nav-menu > li > .sub-menu').fadeOut($setInterval);
 		});
 	});
-
 });
 
-
+	
 	// nice-scroll plugin 
 	$(document).ready(function(){
 		$(function() {  
@@ -37,13 +36,24 @@ $(function() {
 			});
 		});
 	});
-	// Number animate
-	$(document).ready(function(){
 
-			window.customFunction = function() {
-				$('#lines').animateNumber({ number: 165 });
-			};		
-	});
+
+	// Number animate
+		var triggerStartNum = function(){
+			// include-inform num... animation
+			var showStat = false;
+			if (!showStat){
+			setTimeout(function(){
+				$('#informNum1').animateNumber({ number: 91 });
+				$('#informNum2').animateNumber({ number: 260 });
+				$('#informNum3').animateNumber({ number: 60 });
+				$('#informNum4').animateNumber({ number: 40 });
+				$('#informNum5').animateNumber({ number: 2 });
+				$('#informNum6').animateNumber({ number: 16 });
+			}, 100); 
+			showStat = true;
+		}
+	};
 
 
 	// PageScroll2id plugin
@@ -65,17 +75,12 @@ $(function() {
 	// Scroll trigger JS pkugin
 	document.addEventListener('DOMContentLoaded', function(){
 		var trigger = new ScrollTrigger({
-			toggle: {
-			  visible: 'visible',
-			  hidden: 'invisible'
-			},
 			offset: {
 			  x: 0,
 			  y: 20
 			},
-			addHeight: true,
-			once: true
-		  }, document.body, window);
+			addHeight: true
+		  },);
 		}, document.body, window);
 
 

@@ -23,7 +23,10 @@
   src: url("../fonts/RobotoLight/Roboto-Light.eot");
   src: url("../fonts/RobotoLight/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/Roboto-Light.woff") format("woff"), url("../fonts/RobotoLight/Roboto-Light.ttf") format("truetype");
 }
-
+ 
+.__section-bottom-margin {
+  margin-bottom: 60px;
+}
 .site-map {
   position: fixed;
   margin-top: 28px;
@@ -204,17 +207,16 @@ body h2 {
 }
 
 .__section-separator{
-  margin-bottom: 20px;
   -webkit-clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
   clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
 }
 
-.invisible {
+.invisible-st {
   transition: opacity 0.8s ease;
   opacity: 0.0;
 }
 
-.visible {
+.visible-st {
   transition: opacity 0.8s ease;
   opacity: 1.0;
 }
@@ -322,6 +324,10 @@ body h2 {
   position: relative;
   max-width: 100%;
   overflow: hidden;
+}
+
+.top-informer {
+  font-size: 11pt;
 }
 
 .__cover-block {
@@ -487,6 +493,11 @@ body h2 {
   font-family: "roboto-light", sans-serif;
   overflow: hidden;
 }
+.landing-carousel .__cover-block {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;  
+}
 
 .inform-path {
   min-height: 40vh;
@@ -513,6 +524,7 @@ body h2 {
   bottom: -3px;
   right: 90px;
   background-image: url("../img/LGM-Logo-Big.svg");
+  opacity: 0.2;
   -webkit-background-size: 100% 100%;
           background-size: 100%;
   width: 90%;
@@ -575,9 +587,9 @@ body h2 {
   -webkit-transition-property: opacity, background-color;
   -o-transition-property: opacity, background-color;
   transition-property: opacity, background-color;
-  -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   text-decoration: none;
 }
 
@@ -596,8 +608,7 @@ body h2 {
   position: relative;
   color: white;
   border-bottom: 6px solid #6b6b6b;
-  margin-bottom: 50px;
-  background: url("https://images.unsplash.com/photo-1531425918464-838093179bd4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2d6da61bb61eaa6596da4a82aebd1292&auto=format&fit=crop&w=889&q=80");
+  background: url("../img/tsrb-poliklinnika.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -626,18 +637,18 @@ body h2 {
   color: white;
 }
 
-.news h2 {
+.__decor-line-in-headline {
   display: block;
   position: relative;
-  background-color: #fff;
 }
 
-.news h2::after {
+.__decor-line-in-headline::after {
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
   top: 50%;
+  margin-left: 25px;
   background-color: rgb(167, 54, 54);
 
 }
