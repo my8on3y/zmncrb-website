@@ -22,7 +22,7 @@
 						<li><a href="#">Подвал</a></li>
 					</ul>
 				</div>
-		<section class="landing-carousel __section-bottom-margin" style="background-image: url('<?php echo get_template_directory_uri() . "/img/doc1.png" ?>'); background-size: 45vh;">
+		<section class="landing-carousel __section-bottom-margin" style="background-image: url('<?php echo get_template_directory_uri() . "/img/doc1.png" ?>'); background-size: 25%;">
 			<div class="__cover-block"></div>
 			<div class="inform-path">
 				<div class="container">
@@ -42,6 +42,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="control-panel">
+					<!-- Изменить шрифт для кнопок !!растягивающийся -->
 						<a href="#" class="-control-panel_button"><i class="fa fa-headset"></i><h3>Записаться на прием</h3></a>
 						<a href="#" class="-control-panel_button"><i class="fa fa-clock"></i><h3>Расписание приемов</h3></a>
 						<a href="#" class="-control-panel_button"><i class="fa fa-phone-square"></i><h3>Контакты</h3></a>
