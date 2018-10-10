@@ -22,34 +22,31 @@
 						<li><a href="#">Подвал</a></li>
 					</ul>
 				</div>
-		<section class="landing-carousel __section-bottom-margin" style="background-image: url('<?php echo get_template_directory_uri() . "/img/doc1.png" ?>'); background-size: 25%;">
+
+		<section class="landing-carousel __section-bottom-margin">
 			<div class="__cover-block"></div>
-			<div class="inform-path">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6"></div>
-						<div class="col-lg-6 main-central-informer">
-							<div class="inform-card">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aspernatur cumque laboriosam
-									nam nesciunt nostrum officiis similique suscipit voluptatem! Aliquid dicta ducimus labore modi
-									necessitatibus quia, quis ratione sed!</p>
-								<div class="int-button"><a href="#" class="">Продолжить</a></div>
-							</div>
-						</div>
-					</div>
+			<div class="container">
+				<div class="row">
+					<h1 class="animated fadeInDown delay-2s">Змеиногорская ЦРБ</h1>
 				</div>
 			</div>
+			<!-- <div class="autoplay">
+    			<div>Зачем</div>
+    			<div>Ей</div>
+				<div>Все</div>
+				<div>Шелка</div>
+				<div>Цветные</div>
+			  </div>			   -->
 			<div class="container">
 				<div class="row">
 					<div class="control-panel">
 					<!-- Изменить шрифт для кнопок !!растягивающийся -->
-						<a href="#" class="-control-panel_button"><i class="fa fa-headset"></i><h3>Записаться на прием</h3></a>
-						<a href="#" class="-control-panel_button"><i class="fa fa-clock"></i><h3>Расписание приемов</h3></a>
-						<a href="#" class="-control-panel_button"><i class="fa fa-phone-square"></i><h3>Контакты</h3></a>
-						<a href="#" class="-control-panel_button"><i class="fa fa-comment"></i><h3>Обратная связь</h3></a>
+						<a href="#" class="-control-panel_button"><i class="fa fa-headset"></i>Записаться на прием</a>
+						<a href="#" class="-control-panel_button"><i class="fa fa-clock"></i>Расписание приемов</a>
+						<a href="#" class="-control-panel_button"><i class="fa fa-phone-square"></i>Контакты</a>
+						<a href="#" class="-control-panel_button"><i class="fa fa-comment"></i>Обратная связь</a>
 					</div>
 				</div>
-			</div>
 		</section>
 
 		<section id="parral" class="content-block __section-bottom-margin">
@@ -135,7 +132,7 @@
 			<!-- Информация о составе -->
 			<section class="include-inform" data-scroll="once" data-scroll-showCallback="triggerStartNum()">
 				<div class="container">
-				<div class="__section-separator"><h3 class="-a-word __decor-line-in-headline"><i class="fa fa-clipboard-list"></i> Состав ЦРБ:</h3></div>
+				<div class="__section-separator"><h3 class="-a-word __decor-line-in-headline"><i class="fa fa-clipboard-list"></i> Состав ЦРБ</h3></div>
 					<div class="row">
 						<table class="text-center">
 							<tr>
