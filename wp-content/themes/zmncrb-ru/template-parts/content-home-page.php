@@ -24,19 +24,19 @@
 				</div>
 
 		<section class="landing-carousel __section-bottom-margin">
-			<div class="__cover-block"></div>
-			<div class="container">
-				<div class="row">
-					<h1 class="animated fadeInDown delay-2s">Змеиногорская ЦРБ</h1>
-				</div>
+			<div class="section-background"></div>
+			<div class="__cover-block"></div>	
+			<div class="mega-title">
+				<div class="animated fadeInDown text-center"><h1>Приветствуем Вас на официальном сайте</h1></div>
+				<div class="animated fadeInDown text-center"><h2>Центральной Районной болницы</h2></div>
+				<div class="animated fadeInDown text-center"><h5>города</h5><h2> Змеиногорска</h2></div>
 			</div>
-			<!-- <div class="autoplay">
-    			<div>Зачем</div>
-    			<div>Ей</div>
-				<div>Все</div>
-				<div>Шелка</div>
-				<div>Цветные</div>
-			  </div>			   -->
+			<div class="autoplay main-central-slider">
+					<div>Ей</div>
+					<div>Все</div>
+					<div>Шелка</div>
+					<div>Цветные</div>
+					</div>
 			<div class="container">
 				<div class="row">
 					<div class="control-panel">
