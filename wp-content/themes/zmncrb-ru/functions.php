@@ -98,6 +98,14 @@ function zmncrb_ru_content_width() {
 }
 add_action( 'after_setup_theme', 'zmncrb_ru_content_width', 0 );
 
+add_action('admin_menu', function(){
+    add_menu_page( 'Редактор-расписания', 'Расписание', 'manage_options', 'edit-time-board', 'getTtMenu' );
+
+	function getTtMenu() {
+		get_template_part( 'admin-panel/content', 'time-board' );
+	};
+});
+
 /**
  * Register widget area.
  *
@@ -187,9 +195,16 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Customizer additions.
+ */
+require get_template_directory() . '/admin-panel/theme-settings.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
 
