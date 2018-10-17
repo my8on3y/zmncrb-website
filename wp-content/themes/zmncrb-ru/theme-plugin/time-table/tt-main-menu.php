@@ -15,19 +15,12 @@ function putChangesIntoDb() {
             $tt_arr[$i]['end_hour'] = $_POST['end_hour'.$i];
             $tt_arr[$i]['end_minute'] = $_POST['end_minute'.$i];
     }
-    print_r($tt_arr);
-    $result = json_encode($tt_arr);
-    echo '<br>';
-    print_r (json_decode($result, true));
     global $wpdb;
     $wpdb -> update( 
         'wp_tt_doctors',
         array ( 'time_table' => json_encode($tt_arr) ),
-        array ( 'id' => '1'  )
+        array ( 'id' => $_POST['id']  )
     );
-    $db_result = $wpdb -> get_var('SELECT time_table FROM wp_tt_doctors WHERE id = 1');
-    echo '<br>ОТВЕТ ИЗ БАЗЫ';
-    print_r(json_decode($db_result));
 }
 
 
@@ -47,19 +40,22 @@ foreach ($specArr as $spec_value){
     foreach ($queryArr as $query) {
         echo '<div class="doc_name">' . $query -> last_name .' '. $query -> name . '</div>';
         echo '<form method="POST">';
+        echo '<input type="hidden" name="id" value="' . $query -> id . '">';
+        echo '----<input type="checkbox" name="disable">нет приёма<br>';
         for ( $i = 0; $i < 5; $i++ ) {
             switch( $i ) {
-                case 1: echo '<span style="color: green">Пн:</span>'; break;
-                case 2: echo '<span style="color: green">Вт:</span>'; break;
-                case 3: echo '<span style="color: green">Ср:</span>'; break;
-                case 4: echo '<span style="color: green">Чт:</span>'; break;
-                case 5: echo '<span style="color: green">Пт:</span>'; break;
+                case 0: echo '<span style="color: green">Пн:</span>'; break;
+                case 1: echo '<span style="color: green">Вт:</span>'; break;
+                case 2: echo '<span style="color: green">Ср:</span>'; break;
+                case 3: echo '<span style="color: green">Чт:</span>'; break;
+                case 4: echo '<span style="color: green">Пт:</span>'; break;
             }
+            $query_result = json_decode($query -> time_table, true);
             echo '<div class="time_table_day">';
-            echo '<input type="text" name="start_hour'.$i.'" size="1" pattern="[0-9]{,2}" placeholder="чч">';
-            echo '<input type="text" name="start_minute'.$i.'" size="1" pattern="[0-9]{,2}" placeholder="мм">' . ':' ;
-            echo '<input type="text" name="end_hour'.$i.'" size="1" pattern="[0-9]{,2}" placeholder="чч">';
-            echo '<input type="text" name="end_minute'.$i.'" size="1" pattern="[0-9]{,2}" placeholder="мм">'; 
+            echo '<input type="number" name="start_hour'.$i.'" pattern="[0-9]{,2}" placeholder="чч" max="23" min="0" value="' . $query_result[$i]['start_hour'] .'">';
+            echo '<input type="number" name="start_minute'.$i.'" pattern="[0-9]{,2}" placeholder="мм" max="59" min="0" step="10" value="' . $query_result[$i]['start_minute'] .'">' . ':' ;
+            echo '<input type="number" name="end_hour'.$i.'" pattern="[0-9]{,2}" placeholder="чч" max="23" min="0" value="' . $query_result[$i]['end_hour'] .'">';
+            echo '<input type="number" name="end_minute'.$i.'" pattern="[0-9]{,2}" placeholder="мм" max="59" min="0" step="10" value="' . $query_result[$i]['end_minute'] .'">'; 
             echo '</div>'; 
         }
         echo '<input type="submit" name="tt_apply" value="ок">';
@@ -72,9 +68,10 @@ foreach ($specArr as $spec_value){
 ?>
 
 <style>
-    input[type="text"] {
-        width: 35px;
+    input[type="number"] {
+        width: 44px;
         text-align: center;
+        font-size: 12px;
     }
 
     .doc_name {
@@ -84,6 +81,6 @@ foreach ($specArr as $spec_value){
 
     .time_table_day {
         display: inline;
-        margin-right: 35px;
+        margin-right: 15px;
     }
 </style>
