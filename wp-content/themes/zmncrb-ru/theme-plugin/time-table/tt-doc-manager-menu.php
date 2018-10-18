@@ -25,19 +25,23 @@ class db_action {
     private $db_name;
     private $db_patronymic;
     private $db_specialty;
+    private $db_profile;
+    private $db_cabinet;
     
     public function insertDocInDb() {        
         $db_last_name = $this -> dataNormalize($_POST['last_name']);
         $db_name = $this -> dataNormalize($_POST['name']);
         $db_patronymic = $this -> dataNormalize($_POST['patronymic']);
-        $db_specialty = $this -> dataNormalize($_POST['specialty']);
-        if( ($db_last_name && $db_name && $db_patronymic && $db_specialty) == null ) :
+        $db_specialty = $_POST['specialty'];
+        $db_profile = $_POST['profile'];
+        $db_cabinet = $_POST['cabinet'];
+        if( ($db_last_name && $db_name && $db_patronymic && $db_specialty && $db_profile && $db_cabinet) == null ) :
             echo '<h3 style="color: red;">Заполните все поля!</h3>';
         else:
             global $wpdb;
             $wpdb -> insert(
                 'wp_tt_doctors',
-                array ('last_name' => $db_last_name, 'name' => $db_name, 'patronymic' => $db_patronymic, 'specialty' => $db_specialty )
+                array ('last_name' => $db_last_name, 'name' => $db_name, 'patronymic' => $db_patronymic, 'specialty' => $db_specialty, 'profile' => $db_profile, 'cabinet' => $db_cabinet )
             );
             echo '<h3 style="color: green;">Запись успешно добавлена!</h3>';
         endif;
@@ -48,13 +52,16 @@ class db_action {
         $db_name = $this -> dataNormalize( $_POST['name'] );
         $db_patronymic = $this -> dataNormalize( $_POST['patronymic'] );
         $db_specialty = $this -> dataNormalize( $_POST['specialty'] );
-        if( ( $db_last_name && $db_name && $db_patronymic && $db_specialty ) == null ) :
+        $db_specialty = $_POST['specialty'];
+        $db_profile = $_POST['profile'];
+        $db_cabinet = $_POST['cabinet'];
+        if( ( $db_last_name && $db_name && $db_patronymic && $db_specialty && $db_profile && $db_cabinet  ) == null ) :
             echo '<h3 style="color: red;">Заполните все поля!</h3>';
         else:
             global $wpdb;
             $wpdb -> update(
                 'wp_tt_doctors',
-                array ( 'last_name' => $db_last_name, 'name' => $db_name, 'patronymic' => $db_patronymic, 'specialty' => $db_specialty ),
+                array ( 'last_name' => $db_last_name, 'name' => $db_name, 'patronymic' => $db_patronymic, 'specialty' => $db_specialty, 'profile' => $db_profile, 'cabinet' => $db_cabinet  ),
                 array ( 'id' => $_POST['id'])
             );
             echo '<h3 style="color: green;">Запись успешно обновлена!</h3>';
@@ -85,7 +92,7 @@ if($_POST['DB_UPDATE']) {
     $wpdb_action -> updateDocInDb();
 }
 
-if($_POST['DB_DELETE'] && ($_POST['DB_DELETE_COMFIRM'] == 'Удалить')) {
+if($_POST['DB_DELETE']) {
     $wpdb_action -> deleteDocInDb();        
 }
 
@@ -114,7 +121,7 @@ echo    '<div class="doc-flex-section">';
     echo    '</select>';
     echo    '</div>';
     echo    '<div class="doc-section">';
-    echo    '<h4 style="margin: 10px;">№ кабинета:</h4><input type="text" name="last_name" pattern="[0-9]{,3}">';
+    echo    '<h4 style="margin: 10px;">№ кабинета:</h4><input type="number" name="cabinet" pattern="[0-9]{,3}" placeholder="каб." max="999" min="0">';
     echo    '</div>';
 echo    '</div>';
 echo    '<input type="submit" value="Добавить" name="DB_ADD">';
@@ -137,9 +144,17 @@ echo            '<option value="' . $j_value . '">' . $j_value . '</option>';
                 }
             endforeach;
 echo    '</select>';
+echo    '<select name="profile">';
+echo    '<option value="' . $value -> profile . '" selected="' . $value -> profile . '">' . $value -> profile . '</option>';
+                foreach( $json_profile_list as $j_value ):                
+                    if( $j_value != $value -> profile ) {                
+echo                 '<option value="' . $j_value . '">' . $j_value . '</option>';                                        }
+                endforeach;
+echo    '</select>';
+echo    '<input type="number" name="cabinet" pattern="[0-9]{,3}" placeholder="каб." max="999" min="0" value="' . $value -> cabinet . '">';
 echo    '<input type="submit" name="DB_UPDATE" value="Измеинить">';
 echo    '<input type="submit" name="DB_DELETE" value="Удалить">';
-echo    '<input type="text" name="DB_DELETE_COMFIRM" placeholder="Введите в поле "Удалить" для подтверждения удаления">';
+echo    '<input type="text" name="DB_DELETE_COMFIRM" placeholder="Введите -Удалить-">';
 echo '</form>';
 echo '<br>';
     endforeach;
