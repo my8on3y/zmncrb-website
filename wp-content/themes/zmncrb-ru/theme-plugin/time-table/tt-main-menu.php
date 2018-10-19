@@ -1,4 +1,5 @@
 <?php
+    // Меню выводит таблицу расписания для редактирования 
 
 global $wpdb;
 if ( $_POST['tt_apply'] ){
@@ -17,7 +18,7 @@ function putChangesIntoDb() {
     global $wpdb;
     $wpdb -> update( 
         'wp_tt_doctors',
-        array ( 'time_table' => json_encode($tt_arr) ),
+        array ( 'time_table' => json_encode($tt_arr), 'tt_disabled' => $_POST['disabled'] ),
         array ( 'id' => $_POST['id']  )
     );
 }
@@ -39,8 +40,8 @@ foreach ($specArr as $spec_value){
     foreach ($queryArr as $query) {
         echo '<div class="doc_name">' . $query -> last_name .' '. $query -> name . ' ' .  $query -> patronymic . '</div>';
         echo '<form method="POST">';
-        echo '<input type="hidden" name="id" value="' . $query -> id . '">';
-        echo '----<input type="checkbox" name="disable">нет приёма<br>';
+        echo '<input type="hidden" name="id" value="' . $query -> id . '">';?>
+        ----<input type="checkbox" name="disabled" value="1" <?php if( ($query -> tt_disabled) == 1 ){ echo 'checked';} ?>>нет приёма<br><?php
         for ( $i = 0; $i < 5; $i++ ) {
             switch( $i ) {
                 case 0: echo '<span style="color: green">Пн:</span>'; break;

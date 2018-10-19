@@ -149,6 +149,10 @@ function zmncrb_ru_scripts() {
 	wp_enqueue_script( 'slick-slider.js', get_template_directory_uri() . '/libs/slick/slick/slick.min.js', array(), '', true );
 	
 	wp_enqueue_style( 'animate.css', get_stylesheet_directory_uri() . '/libs/animate.css/animate.min.css');
+
+	wp_enqueue_script( 'time-table.js', get_template_directory_uri() . '/theme-plugin/time-table/time-table.min.js', array(), '', true );
+	
+	wp_enqueue_style( 'time-table.css', get_stylesheet_directory_uri() . '/theme-plugin/time-table/time-table.min.css');
 	
 	wp_enqueue_script( 'common-js', get_template_directory_uri() . '/js/common.js', array(), '20151215', true );
 

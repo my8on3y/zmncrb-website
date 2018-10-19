@@ -16,7 +16,6 @@ $json_profile_list = json_decode( $file_json, true );
 unset( $file_json );
 
 class db_action {  
-
     private function dataNormalize( $value ) {
         return mb_strtoupper(mb_substr($value,0,1,'UTF-8')) . mb_substr( mb_strtolower($value), 1);
     }    
