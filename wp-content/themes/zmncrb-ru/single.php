@@ -1,11 +1,7 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package zmncrb.ru
- */
+/*
+Template Name: time-table template
+*/
 
 get_header();
 ?>

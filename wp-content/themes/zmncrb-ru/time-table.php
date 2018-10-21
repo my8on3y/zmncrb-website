@@ -24,14 +24,16 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
             <div class="row">
                 <div class="col-lg-3 sidebar-doctors-name">
                     <ul><?php 
+                        $i = 0;
                         foreach ($tt_last_name as $value) {
-                            echo '<li><a class="doc_link_ajax" href="#" value="' . $tt_id[$i] .'">'. $value . '</a></li>';
+                            echo '<li><a class="doc_link_ajax" href="#" queryVal="' . $tt_id[$i] .'">'. $value . '</a></li>';
                             $i++;
                         }
+                        unset ($i);
                     ?>
                     </ul>
                 </div>
-                <div class="col-lg-9">Расписание</div>
+                <div class="col-lg-9 result">Расписание</div>
             </div>
         </div>
     </section>

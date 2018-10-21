@@ -27,8 +27,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4"></div>
-				<div class="col-lg-8">
-					<div class="top-nav-line">
+				<div class="col-lg-8 top-nav-line">
 						<div class="top-informer"><i class="fa fa-calendar-alt"></i><?php echo ' ' . date( "d.m.Y" ) ?></div>
 						<div class="top-informer"><i class="fa fa-thermometer-half"></i><?php 
 							// ( function(){
@@ -40,7 +39,6 @@
 						</div>
 						<div class="top-informer .geo-location"><i class="fa fa-map-marker-alt"></i> Zmeinogorsk</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -72,7 +70,6 @@
 				<div class="col-lg-12 col-md-12 col-xs-12">
 					<div class="bottom-nav-line">
 						<?php
-
 						wp_nav_menu( array(
 							'theme_location'  => 'nav-menu-top',
 							'menu'            => 'Меню сайта',
@@ -82,10 +79,8 @@
 							'menu_id'         => 'nav-menu',
 							'fallback_cb'	  => '',
 							'items_wrap'	  => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-						)); 						
-						
-							?>
-						
+						));		
+							?>						
 					</div>	
 				</div>
 			</div>
