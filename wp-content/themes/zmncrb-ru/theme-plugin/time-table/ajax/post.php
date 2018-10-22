@@ -11,5 +11,6 @@ require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
 // Глобальные переменные $wp, $wp_query, $wp_the_query не установлены...
 global $wpdb;
 
-$vary = $wpdb -> get_var("SELECT name FROM wp_tt_doctors WHERE id=$_POST[myQw]");
-echo $vary;
+$ttQuery = $wpdb -> get_var("SELECT time_table FROM wp_tt_doctors WHERE id=$_POST[myQw]");
+$ttQueryArr = json_encode( $ttQuery ); 
+echo  $ttQuery;

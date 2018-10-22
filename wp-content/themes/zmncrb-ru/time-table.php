@@ -19,24 +19,43 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
 
 
 ?>
-    <section class="time-table">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 sidebar-doctors-name">
-                    <ul><?php 
+<section class="time-table">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 sidebar-doctors-name">
+                <ul>
+                    <?php 
                         $i = 0;
-                        foreach ($tt_last_name as $value) {
-                            echo '<li><a class="doc_link_ajax" href="#" queryVal="' . $tt_id[$i] .'">'. $value . '</a></li>';
+                        foreach ($tt_id as $value) {
+                            echo '<li><a class="doc_link_ajax" href="#" queryVal="' . $value .'">' . $tt_last_name[$i] . ' ' . $tt_name[$i] . ' ' . $tt_patronymic[$i] . '</a></li>';
                             $i++;
                         }
                         unset ($i);
                     ?>
-                    </ul>
+                </ul>
+            </div>
+            <div class="col-lg-9">
+                <div class="time-table-time-board">
+                    <?php
+                        echo '<h1 id="tt_doc_name"></h1>'; 
+                        echo '<div>';
+                        for( $i = 0; $i < 5; $i++ ) {
+                            echo '<div class="tt_card">';
+                            echo ' c ';
+                            echo '<span id="tt_hourstart'.$i.'" class="tt_hour"></span>';
+                            echo '<span id="tt_minutestart'.$i.'" class="tt_minute"></span>';
+                            echo ' до ';
+                            echo '<span id="tt_hourend'.$i.'" class="tt_hour"></span>';
+                            echo '<span id="tt_minuteend'.$i.'" class="tt_minute"></span>';
+                            echo '</div>';
+                        }
+                        echo '</div>';
+                    ?>
                 </div>
-                <div class="col-lg-9 result">Расписание</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <script type="text/javascript">
     var ajaxPathUrl = "<?php echo get_template_directory_uri() . '/theme-plugin/time-table/ajax/post.php' ?>";

@@ -6,14 +6,13 @@ if ( $_POST['tt_apply'] ){
     putChangesIntoDb();
 }
 
-
 function putChangesIntoDb() {
     $tt_arr = [];
     for( $i = 0; $i < 5; $i++ ){
-            $tt_arr[$i]['start_hour'] = $_POST['start_hour'.$i];
-            $tt_arr[$i]['start_minute'] = $_POST['start_minute'.$i];
-            $tt_arr[$i]['end_hour'] = $_POST['end_hour'.$i];
-            $tt_arr[$i]['end_minute'] = $_POST['end_minute'.$i];
+            $tt_arr[$i]['start_hour'] = ( $_POST['start_hour'.$i]{0} == '0' ) ? substr($_POST['start_hour'.$i], 1) : $_POST['start_hour'.$i];
+            $tt_arr[$i]['start_minute'] = ( strlen ( $_POST['start_minute'.$i] ) == 1 ) ? '0' . $_POST['start_minute'.$i] : $_POST['start_minute'.$i];
+            $tt_arr[$i]['end_hour'] = ( $_POST['end_hour'.$i]{0} == '0' ) ? substr($_POST['end_hour'.$i], 1) : $_POST['end_hour'.$i];
+            $tt_arr[$i]['end_minute'] = ( strlen ( $_POST['end_minute'.$i] ) == 1 ) ? '0' . $_POST['end_minute'.$i] : $_POST['end_minute'.$i];
     }
     global $wpdb;
     $wpdb -> update( 

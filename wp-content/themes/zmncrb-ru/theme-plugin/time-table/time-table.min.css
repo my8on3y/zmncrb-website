@@ -7,8 +7,28 @@
  *
  * Copyright (c) 2018 zmncrb.ru
  */
+ .time-table {
+     margin-top: 55px;
+ }
+ .time-table-time-board {
+     display: flex;
+     flex-direction: column
+ }
 
+.time-table-time-board .tt_card {
+    font-size: 2em;
+    border: 1px solid;
+    margin-left: 20px;
+}
 
-.time-table {
+.time-table-time-board .tt_hour {
 
+}
+
+.time-table-time-board .tt_hour::after {
+    content: ':';
+}
+
+.time-table-time-board .tt_minute {
+    
 }
