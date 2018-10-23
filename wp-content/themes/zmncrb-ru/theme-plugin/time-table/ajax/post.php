@@ -12,7 +12,7 @@ require_once( $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php' );
 global $wpdb;
 
 $ttQuery = $wpdb -> get_var("SELECT time_table FROM wp_tt_doctors WHERE id=$_POST[myQw]");
-$ttQueryArr = json_encode( $ttQuery ); 
+$ttQueryArr = json_encode( $ttQuery, true ); 
 echo  $ttQuery;
 
 

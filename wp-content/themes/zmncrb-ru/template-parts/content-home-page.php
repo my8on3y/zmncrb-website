@@ -28,7 +28,7 @@
 			<div class="__cover-block"></div>	
 			<div class="mega-title">
 				<div class="animated fadeInDown slow text-center"><h1>Приветствуем Вас на официальном сайте</h1></div>
-				<div class="animated fadeIn slower delay-2s text-center"><h2>Центральной районной больницы</h2></div>
+				<div class="animated fadeIn slower text-center"><h2>Центральной районной больницы</h2></div>
 				<div class="animated fadeInUp slow text-center"><h5>города</h5><h2> Змеиногорска</h2></div>
 			</div>
 			<div class="autoplay main-central-slider">
@@ -158,21 +158,6 @@
 							<td><span id="informNum5" style="font-size: 20pt; color: #29b6f6"></span></td>
 							<td><span id="informNum6" style="font-size: 20pt; color: #29b6f6"></span></td></tr>
 						</table>
-						<!-- <div class="col-lg-2 text-center"><h3>стационар</h3>91 койка</div>
-						<div class="col-lg-2 text-center"><h3>поликлиника</h3>260 посещений</div>
-						<div class="col-lg-2 text-center"><h3>детская консультация</h3>60 посещений</div>
-						<div class="col-lg-2 text-center"><h3>женская консультация</h3>40 посещений</div>
-						<div class="col-lg-2 text-center"><h3>врачебных амбулаторий</h3>2</div>
-						<div class="col-lg-2 text-center"><h3>ФАП’ов</h3>16</div> -->
-						<!-- <ul>
-							<li>стационар на 91 койку (61 койка круглосуточного и 30 коек дневного стационара).</li>
-							<li>поликлиника на 260 посещений.</li>
-							<li>детская консультация на 60 посещений.</li>
-							<li>женская консультация на 40 посещений. </li>
-							<li>2 врачебные амбулатории.  </li>
-							<li>16 ФАП’ов.</li>
-						</ul> -->
-						<!-- <p>This plugin only <span data-scroll data-scroll-showCallback="customFunction" data-scroll-hideCallback="customFunction('Invisible')" id="lines">0</span> lines of code.</p> -->
 					</div>
 				</div>
 			</section>

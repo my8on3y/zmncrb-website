@@ -28,7 +28,7 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
                     <?php 
                         $i = 0;
                         foreach ($tt_id as $value) {
-                            echo '<li><a class="doc_link_ajax" href="#" specialty="' . $tt_specialty[$i] . '" queryVal="' . $value .'">' . $tt_last_name[$i] . ' ' . $tt_name[$i] . ' ' . $tt_patronymic[$i] . '</a></li>';
+                            echo '<li><a class="doc_link_ajax" href="#%%" specialty="' . $tt_specialty[$i] . '" queryVal="' . $value .'">' . $tt_last_name[$i] . ' ' . $tt_name[$i] . ' ' . $tt_patronymic[$i] . '</a></li>';
                             $i++;
                         }
                         unset ($i);
