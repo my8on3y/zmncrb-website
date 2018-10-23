@@ -14,3 +14,15 @@ global $wpdb;
 $ttQuery = $wpdb -> get_var("SELECT time_table FROM wp_tt_doctors WHERE id=$_POST[myQw]");
 $ttQueryArr = json_encode( $ttQuery ); 
 echo  $ttQuery;
+
+
+
+// ( "SELECT id FROM wp_tt_doctors" );
+// ( "SELECT last_name FROM wp_tt_doctors" );
+// ( "SELECT name FROM wp_tt_doctors" );
+// ( "SELECT patronymic FROM wp_tt_doctors" );
+// ( "SELECT specialty FROM wp_tt_doctors" );
+// ( "SELECT profile FROM wp_tt_doctors" );
+// ( "SELECT cabinet FROM wp_tt_doctors" );
+// ( "SELECT time_table FROM wp_tt_doctors" );
+// ( "SELECT disabled FROM wp_tt_doctors" );

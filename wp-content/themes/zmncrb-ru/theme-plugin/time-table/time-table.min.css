@@ -9,16 +9,44 @@
  */
  .time-table {
      margin-top: 55px;
+     height: calc(100vh - 409px);
  }
+
+ .time-table .sidebar-doctors-name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .time-table .sidebar-doctors-name ul {
+    padding: 0;
+    margin: 0;
+ }
+
+ .time-table .sidebar-doctors-name li { 
+     list-style: none;
+ }
+
  .time-table-time-board {
      display: flex;
-     flex-direction: column
+     flex-direction: column;
+ }
+
+.time-table-time-board {
+     padding-left: 15px;
+     border-left: 1px solid #909090;
  }
 
 .time-table-time-board .tt_card {
+    display: inline-block;
+    text-align: center;
     font-size: 2em;
-    border: 1px solid;
+    font-weight: bold;
+    min-width: 249.47px;
+    min-height: 128px;
+    background-color: rgb(75, 183, 216);
+    color: #ffffff;
     margin-left: 20px;
+    padding: 12px;
 }
 
 .time-table-time-board .tt_hour {

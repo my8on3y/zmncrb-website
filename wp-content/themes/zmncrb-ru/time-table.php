@@ -23,11 +23,12 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 sidebar-doctors-name">
-                <ul>
+                <input type="text" id="tt_filter_doclist" placeholder="фильтр по фамилии">
+                <ul class="doc_query_list">
                     <?php 
                         $i = 0;
                         foreach ($tt_id as $value) {
-                            echo '<li><a class="doc_link_ajax" href="#" queryVal="' . $value .'">' . $tt_last_name[$i] . ' ' . $tt_name[$i] . ' ' . $tt_patronymic[$i] . '</a></li>';
+                            echo '<li><a class="doc_link_ajax" href="#" specialty="' . $tt_specialty[$i] . '" queryVal="' . $value .'">' . $tt_last_name[$i] . ' ' . $tt_name[$i] . ' ' . $tt_patronymic[$i] . '</a></li>';
                             $i++;
                         }
                         unset ($i);
@@ -37,10 +38,18 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
             <div class="col-lg-9">
                 <div class="time-table-time-board">
                     <?php
-                        echo '<h1 id="tt_doc_name"></h1>'; 
-                        echo '<div>';
+                        echo '<h1 id="tt_doc_name">Доктор</h1>'; 
+                        echo '<h3 id="tt_doc_specialty">специальность</h3>';
+                        echo '<div class="tt_card_table">';
                         for( $i = 0; $i < 5; $i++ ) {
                             echo '<div class="tt_card">';
+                            switch( $i ) {
+                                case 0: echo '<span style="">Пн</span><br>'; break;
+                                case 1: echo '<span style="">Вт</span><br>'; break;
+                                case 2: echo '<span style="">Ср</span><br>'; break;
+                                case 3: echo '<span style="">Чт</span><br>'; break;
+                                case 4: echo '<span style="">Пт</span><br>'; break;
+                            }
                             echo ' c ';
                             echo '<span id="tt_hourstart'.$i.'" class="tt_hour"></span>';
                             echo '<span id="tt_minutestart'.$i.'" class="tt_minute"></span>';
