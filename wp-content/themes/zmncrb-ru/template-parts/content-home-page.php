@@ -27,16 +27,16 @@
 			<div class="section-background"></div>
 			<div class="__cover-block"></div>	
 			<div class="mega-title">
-				<div class="animated fadeInDown slow text-center"><h1>Приветствуем Вас на официальном сайте</h1></div>
-				<div class="animated fadeIn slower text-center"><h2>Центральной районной больницы</h2></div>
-				<div class="animated fadeInUp slow text-center"><h5>города</h5><h2> Змеиногорска</h2></div>
+				<h1>Приветствуем Вас на официальном сайте</h1>
+				<h2>Центральной районной больницы</h2>
+				<h5>города</h5><h2> Змеиногорска</h2>
 			</div>
-			<div class="autoplay main-central-slider">
+			<!-- <div class="autoplay main-central-slider">
 					<div>Ей</div>
 					<div>Все</div>
 					<div>Шелка</div>
 					<div>Цветные</div>
-					</div>
+					</div> -->
 			<div class="container">
 				<div class="row">
 					<div class="control-panel">

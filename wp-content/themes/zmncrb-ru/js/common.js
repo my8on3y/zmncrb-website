@@ -11,13 +11,13 @@ $(function() {
 
 	// nav-menu
 	$(document).ready(function(){
-		$setInterval = 200;
+		$setInterval = 100;
 		$('#nav-menu li').hover(function(){
 			if($('.sub-menu:hidden')){$(this).children('#nav-menu > li > a').css({'background-color' : '#fff', 'color' : '#000'})};
-			$(this).find('.sub-menu').stop(false, true).fadeIn($setInterval);
+			$(this).find('.sub-menu').stop(false, true).css({'display' : 'block'});
 		}, function(){
 			if($('.sub-menu:hidden')){$(this).children('#nav-menu > li > a').css({'background-color' : '#2A3140', 'color' : '#fff'})};
-			$(this).children('#nav-menu > li > .sub-menu').fadeOut($setInterval);
+			$(this).children('#nav-menu > li > .sub-menu').css({'display' : 'none'});
 		});
 	});
 });
@@ -64,13 +64,13 @@ $(function() {
 	})(jQuery);
 
 
-// (function($){
-// 	$(window).on("load",function(){
-// 		$('body').mCustomScrollbar({
-// 			theme: 'minimal'
-// 		});
-// 	});
-// })(jQuery);
+(function($){
+	$(window).on("load",function(){
+		$('#doc_query_list').mCustomScrollbar({
+			theme: 'dark-thick'
+		});
+	});
+})(jQuery);
 
 	// Scroll trigger JS pkugin
 	document.addEventListener('DOMContentLoaded', function(){

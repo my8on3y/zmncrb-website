@@ -9,34 +9,50 @@
  */
  .time-table {
      margin-top: 55px;
-     height: calc(100vh - 409px);
  }
 
  .time-table .sidebar-doctors-name {
-    margin-top: 20px;
     margin-bottom: 20px;
+    padding: 0;
+    margin-left: 5px;
  }
 
- .time-table .sidebar-doctors-name ul {
+.time-table .sidebar-doctors-name .doc_query_list {
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    margin-top: 25px;
+    max-height: 500px;
+}
+
+ .time-table .sidebar-doctors-name .doc_query_list ul {
     padding: 0;
     margin: 0;
  }
 
- .time-table .sidebar-doctors-name li { 
-     list-style: none;
+ .time-table .sidebar-doctors-name .doc_query_list li { 
+    list-style: none;
+    background-color: #383838;
+    padding: 8px;
+    transition: background-color 0.5s;
  }
 
- .time-table-time-board {
-     display: flex;
-     flex-direction: column;
- }
+ .time-table .sidebar-doctors-name .doc_query_list li:hover {
+    background-color: #D93240;
+}
+
+ .time-table .sidebar-doctors-name .doc_query_list li a { 
+    color: #ffffff;
+    font-size: 0.8em;
+    text-decoration: none;
+}
 
 .time-table-time-board {
-     padding-left: 15px;
-     border-left: 1px solid #909090;
+     padding-left: 10px;
  }
 
 .time-table-time-board .tt_card {
+    position: relative;
     display: inline-block;
     text-align: center;
     font-size: 2em;
@@ -45,8 +61,9 @@
     min-height: 128px;
     background-color: rgb(75, 183, 216);
     color: #ffffff;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 12px;
+    margin-top: 50px;
 }
 
 .time-table-time-board .tt_hour {

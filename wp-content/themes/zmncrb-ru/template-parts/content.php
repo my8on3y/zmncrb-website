@@ -10,10 +10,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
 		<?php
+		$title = the_title( '', '', 0 );
+		$titleArr = explode( ' ', $title );
+		$titleContent = implode(' ', array_slice( $titleArr, 1, 15 ) ); 
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			echo '<h2 class="entry-title"><i class="fa fa-quote-left" style="color: #6b6b6b;"></i> <span class="-b-word">' . $titleArr[0] . '</span> ' . $titleContent . '</h2>';
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -24,7 +26,6 @@
 
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php

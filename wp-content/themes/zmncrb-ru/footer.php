@@ -12,6 +12,7 @@
 ?>
 
 	</div><!-- #content -->
+	</main>
 	<footer class="footer-section">
 
 		<div class="container">
