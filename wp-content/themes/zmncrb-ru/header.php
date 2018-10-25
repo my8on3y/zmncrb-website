@@ -33,7 +33,9 @@
 							( function(){
 								$json = file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc');
 								$JSON_Array = json_decode( $json, true );
-								echo ' ' .  round ( $JSON_Array['list'][0]['main']['temp'] - 273.15 ) . '&deg C';
+								if ( json_last_error_msg () ) {
+								echo ' ' .  round ( $JSON_Array['list'][0]['main']['temp'] - 273.15 ) . '&deg C'; }
+								else { echo 'Обновление'; }
 							})();
 							?>
 						</div>

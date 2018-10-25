@@ -130,7 +130,7 @@
 			</section> 
 
 			<!-- Информация о составе -->
-			<section class="include-inform" data-scroll="once" data-scroll-showCallback="triggerStartNum()">
+			<section class="include-inform __section-bottom-margin" data-scroll="once" data-scroll-showCallback="triggerStartNum()">
 				<div class="container">
 				<div class="__section-separator"><h3 class="-a-word __decor-line-in-headline"><i class="fa fa-clipboard-list"></i> Состав ЦРБ</h3></div>
 					<div class="row">
@@ -161,7 +161,34 @@
 					</div>
 				</div>
 			</section>
-		
+			
+			<section class="organisation-work-time __section-bottom-margin">
+				<div class="container">
+					<div class="__section-separator"><h3 class="__decor-line-in-headline"><i class="fa fa-clipboard-list"></i><span class="-a-word"> Режим</span> работы</h3></div>
+					<div class="row">
+						<div class="col-lg-12">
+							<table class="" align="left" style="width: 100%;">
+								<tr align="left"><th><i class="fa fa-hospital" style="color: #D93240;"></i> Отделение</th><th><i class="fa fa-clock" style="color: #D93240;"></i> Режим работы</th></tr>
+								<tr><td>Стационар</td><td>круглосуточно</td></tr>
+								<tr><td>Поликлиника </td><td>с 7.30 - 20.00</td></tr>
+								<tr><td>Детская консультация</td><td>с 7.30 - 17.00 </td></tr>
+								<tr><td>Женская консультация</td><td>с 8.00 - 17.00</td></tr>
+								<tr><td>Административная часть</td><td>с 8.30 - 16.48</td></tr>
+							</table>
+						</div>
+				</div>
+			</section>
+
+			<section class="yandex-map">
+				<div class="container">
+					<div class="__section-separator"><h3 class="__decor-line-in-headline"><i class="fa fa-map"></i><span class="-a-word"> Схема</span> проезда</h3></div>
+				</div>
+				<div class="map">
+					<div class="container">
+						<iframe id="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBB9IZtQ0B" width="100%" height="400" frameborder="1" allowfullscreen="true" style="border: none;"></iframe>
+					</div>
+				</div>
+			</section>
 		<?php
 		the_content();
 		

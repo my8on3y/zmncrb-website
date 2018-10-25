@@ -307,6 +307,11 @@ body h2 {
   border-bottom: 1px solid #1565c0;
 }
 
+#nav-menu li .sub-menu li:nth-child(2n) a::before {
+  content: url('../img/icon/share.svg');
+}
+
+
 #nav-menu li .sub-menu li a:hover {
   color: #1565c0;
 }
@@ -762,6 +767,51 @@ body h2 {
   font-family: roboto-light;
   color: #ffffff;
   margin-bottom: 0;
+}
+
+.organisation-work-time table {
+  table-layout: fixed;
+}
+
+.organisation-work-time table tr th {
+  background-color: #fff;
+  color: #666;
+}
+
+.organisation-work-time table tr td {
+  font-size: 1.2em;
+  border-bottom: 1px solid #fff;
+  padding: 5px;
+}
+
+.organisation-work-time table tr:nth-child(2n) {
+  background-color: rgb(158, 158, 158);
+
+}
+
+.organisation-work-time table tr:nth-child(2n+1) {
+  color:  rgb(54, 54, 54);
+  border-bottom: 1px solid #fff;
+
+}
+
+.map {
+  background-color: #a1caff;
+  padding: 15px;
+}
+
+.yandex-map .map .container {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.yandex-map .map .container iframe {
+  border-radius: 10px;
+  filter: drop-shadow(11px 7px 8px #888888);
+  -webkit-filter: drop-shadow(11px 7px 8px #888888);
+  -moz-filter: drop-shadow(11px 7px 8px #888888);
+
 }
 
 /*==========  Desktop First  ==========*/
