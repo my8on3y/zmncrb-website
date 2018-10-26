@@ -30,13 +30,14 @@
 				<div class="col-lg-8 top-nav-line">
 						<div class="top-informer"><i class="fa fa-calendar-alt"></i><?php echo ' ' . date( "d.m.Y" ) ?></div>
 						<div class="top-informer"><i class="fa fa-thermometer-half"></i><?php 
-							( function(){
-								$json = file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc');
-								$JSON_Array = json_decode( $json, true );
-								if ( json_last_error_msg () ) {
-								echo ' ' .  round ( $JSON_Array['list'][0]['main']['temp'] - 273.15 ) . '&deg C'; }
-								else { echo 'Обновление'; }
-							})();
+							// ( function(){
+							// 	$json = file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc');
+							// 	$JSON_Array = json_decode( $json, true );
+							// 	$JSON_value = round ( $JSON_Array['list'][0]['main']['temp'] - 273.15 ) . '&deg C';
+							// 	if ( json_decode( $json, true ) !== null ) {
+							// 	echo ' ' .  $JSON_value . '&deg C'; }
+							// 	else { echo 'Обновление'; }
+							// })();
 							?>
 						</div>
 						<div class="top-informer .geo-location"><i class="fa fa-map-marker-alt"></i> Zmeinogorsk</div>

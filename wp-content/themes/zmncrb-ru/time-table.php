@@ -48,7 +48,8 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="time-table-time-board">
+                <div class="time-table-time-board text-center">
+                    <h1 class="inform-title">Расписание приема врачей</h1>
                     <?php
                         echo '<i class="fa fa-user-md" style="font-size: 1.5em; color: #6d6c6c;"></i><span> </span><h1 id="tt_doc_name" style="display: inline;">Доктор</h1><br>'; 
                         echo '<i class="fa fa-tags" style="font-size: 1.1em; color: #6d6c6c;"></i><span> </span><span id="tt_doc_specialty">специальность</span><br>';

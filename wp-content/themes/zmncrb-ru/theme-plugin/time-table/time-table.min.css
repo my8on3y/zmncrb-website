@@ -32,23 +32,29 @@
 
  .time-table .sidebar-doctors-name .doc_query_list li { 
     list-style: none;
-    background-color: #383838;
-    padding: 8px;
-    transition: background-color 0.5s;
+    background-color: rgb(182, 105, 60);
+    padding: 6px;
+    transition: transform 0.7s;
+    border-bottom: 2px solid #fff;
  }
 
  .time-table .sidebar-doctors-name .doc_query_list li:hover {
-    background-color: #D93240;
-}
+    transform: translateX(8px);
+ }
 
  .time-table .sidebar-doctors-name .doc_query_list li a { 
     color: #ffffff;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.time-table .sidebar-doctors-name .doc_query_list li a:hover { 
+    color: #357540;
 }
 
 .time-table-time-board {
-     padding-left: 10px;
+    padding-left: 10px;
  }
 
 .time-table-time-board .tt_card {
@@ -64,6 +70,11 @@
     margin-left: 10px;
     padding: 12px;
     margin-top: 50px;
+}
+.time-table-time-board .inform-title {
+    background-color: rgb(17, 57, 90);
+    color: #fff;
+    padding: 15px;
 }
 
 .time-table-time-board .tt_hour {
