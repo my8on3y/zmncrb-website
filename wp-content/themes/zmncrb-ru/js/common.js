@@ -118,3 +118,7 @@ function triggerStartNum() {
 		showStat = true;
 	}
 };
+
+
+
+

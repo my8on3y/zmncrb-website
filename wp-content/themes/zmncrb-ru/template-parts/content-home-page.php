@@ -179,13 +179,22 @@
 				</div>
 			</section>
 
-			<section class="yandex-map">
+			<section class="yandex-map  __section-bottom-margin">
 				<div class="container">
 					<div class="__section-separator"><h3 class="__decor-line-in-headline"><i class="fa fa-map"></i><span class="-a-word"> Схема</span> проезда</h3></div>
 				</div>
 				<div class="map">
 					<div class="container">
-						<iframe id="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBB9IZtQ0B" width="100%" height="400" frameborder="1" allowfullscreen="true" style="border: none;"></iframe>
+						<div class="row">
+							<div class="col-lg-8"><iframe id="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBB9IZtQ0B" width="100%" height="400" frameborder="1" allowfullscreen="true" style="border: none;"></iframe></div>
+							<div class="col-lg-4">
+								<ul><h3>Схема проезда</h3>
+									<li>Змеиногосркая ЦРБ</li>
+									<li>Автобусный маршрут №2</li>
+									<li>улица Фролова 18</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

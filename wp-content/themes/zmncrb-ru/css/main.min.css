@@ -728,6 +728,17 @@ body h2 {
   flex: 0 0 auto;
 }
 
+.footer-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  color: #ffffff;
+  list-style: none;
+  font-size: 0.9em;
+}
+
 .footer-section::after {
   content: '';
   position: absolute;
@@ -767,6 +778,11 @@ body h2 {
   font-family: roboto-light;
   color: #ffffff;
   margin-bottom: 0;
+}
+
+.footer-section .informers-section {
+  position: relative;
+  z-index: 5000;
 }
 
 .organisation-work-time table {

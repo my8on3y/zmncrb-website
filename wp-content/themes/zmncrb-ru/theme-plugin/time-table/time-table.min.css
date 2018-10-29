@@ -36,22 +36,15 @@
     padding: 6px;
     transition: transform 0.7s;
     border-bottom: 2px solid #fff;
+    color: #ffffff;
+    font-size: 0.9em;
+    text-decoration: none;
+    cursor: pointer;
  }
 
  .time-table .sidebar-doctors-name .doc_query_list li:hover {
     transform: translateX(8px);
  }
-
- .time-table .sidebar-doctors-name .doc_query_list li a { 
-    color: #ffffff;
-    font-size: 0.9em;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.time-table .sidebar-doctors-name .doc_query_list li a:hover { 
-    color: #357540;
-}
 
 .time-table-time-board {
     padding-left: 10px;

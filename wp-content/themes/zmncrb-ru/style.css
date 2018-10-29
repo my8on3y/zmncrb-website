@@ -835,6 +835,7 @@ a:hover, a:active {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	font-size: 0.8em;
 }
 
 .page-links {

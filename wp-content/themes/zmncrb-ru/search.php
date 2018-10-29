@@ -10,18 +10,18 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="content-area container">
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h3 class="page-title"><i class="fa fa-search" style="color: #1565c0"></i>
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'zmncrb-ru' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Результаты для: %s', 'zmncrb-ru' ), '<span>' . get_search_query() . '</span>' );
 					?>
-				</h1>
+				</h3>
 			</header><!-- .page-header -->
 
 			<?php
@@ -51,5 +51,4 @@ get_header();
 	</section><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

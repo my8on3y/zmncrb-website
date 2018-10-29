@@ -37,9 +37,9 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
 
                     foreach ($specArr as $spec_value){
                         $queryArr = $wpdb -> get_results("SELECT * FROM wp_tt_doctors WHERE specialty = '$spec_value'");
-                        echo '<h3 style="margin: 0;">'. $spec_value .  '</h3><br>';
+                        echo '<span style="margin-bottom: 10px;">'. $spec_value .  '</span><br>';
                         foreach ($queryArr as $query) {
-                            echo '<li><a class="doc_link_ajax" href="#%%" specialty="' . $spec_value . '" queryVal="' . $query -> id .'">' . $query -> last_name .' '. $query -> name . ' ' .  $query -> patronymic . '</a></li>';                           
+                            echo '<li class="doc_link_ajax" specialty="' . $spec_value . '" queryVal="' . $query -> id .'">' . $query -> last_name .' '. $query -> name . ' ' .  $query -> patronymic . '</li>';                           
                         }
                         echo '<hr>';
                     }
@@ -49,9 +49,8 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
             </div>
             <div class="col-lg-9">
                 <div class="time-table-time-board text-center">
-                    <h1 class="inform-title">Расписание приема врачей</h1>
                     <?php
-                        echo '<i class="fa fa-user-md" style="font-size: 1.5em; color: #6d6c6c;"></i><span> </span><h1 id="tt_doc_name" style="display: inline;">Доктор</h1><br>'; 
+                        echo '<h1 id="tt_doc_name" class="inform-title">Расписание приема врачей</h1><br>'; 
                         echo '<i class="fa fa-tags" style="font-size: 1.1em; color: #6d6c6c;"></i><span> </span><span id="tt_doc_specialty">специальность</span><br>';
                         echo '<div class="tt_card_table">';
                         for( $i = 0; $i < 5; $i++ ) {
