@@ -295,7 +295,7 @@ body h2 {
   padding-top: 3px;
   border: none;
   color: #000;
-  font-size: 10pt;
+  font-size: 0.7em;
 }
 
 #nav-menu li .sub-menu li a {
@@ -518,12 +518,17 @@ body h2 {
   font-weight: bold;
 }
 
+.search-panel .blind-mode a {
+  color: #000000;
+}
+
 .landing-carousel {
   position: relative;
   margin-bottom: 110px;
   border-bottom: 6px solid #6b6b6b;
   font-family: "roboto-light", sans-serif;
   overflow: hidden;
+  width: 40vh;
 }
 
 .landing-carousel .__cover-block {
@@ -544,43 +549,9 @@ body h2 {
   height: 100%;
 }
 
-.landing-carousel .mega-title {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  z-index: 500;
-  text-align: center;
-}
-
-.landing-carousel .mega-title h1 {
-  text-transform: unset;
-  display: inline;
-  color: #fff;
-  opacity: 0.75;
-  line-height: 50px;
-}
-
-.landing-carousel .mega-title h2 {
-  text-transform: unset;
-  display: inline;
-  color: #fff;
-  opacity: 0.75;
-  line-height: 50px;
-}
-
-.landing-carousel .mega-title h5 {
-  text-transform: unset;
-  display: inline;
-  color: #fff;
-  opacity: 0.75;
-  line-height: 50px;
-}
-
 .landing-carousel .main-central-slider {
   position: relative;
-  height: 40vh;
-  z-index: 1000;
+  z-index: 400;
 }
 
 .int-button {

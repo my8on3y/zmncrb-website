@@ -1,0 +1,243 @@
+# Copyright (C) 2015 984.ru
+# This file is distributed under the same license as the For The Visually Impaired package.
+msgid ""
+msgstr ""
+"Project-Id-Version: For The Visually Impaired 0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/\n"
+"POT-Creation-Date: 2016-08-11 11:41+0300\n"
+"PO-Revision-Date: 2016-08-11 11:42+0300\n"
+"Last-Translator: \n"
+"Language-Team: 984.ru <support@984.ru>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "For The Visually Impaired"
+msgstr "Плагин для слабовидящих"
+
+msgid "For The Visually Impaired Settings"
+msgstr "Настройки плагина для слабовидящих"
+
+msgid "For The Visually Impaired Version"
+msgstr "Версия для слабовидящих"
+
+msgid "Button For The Visually Impaired"
+msgstr "Кнопка для слабовидящих"
+
+msgid "Button text:"
+msgstr "Текст кнопки:"
+
+msgid "Version for visually impaired"
+msgstr "Версия для слабовидящих"
+
+msgid "BACK TO NORMAL MODE"
+msgstr "ВЕРНУТЬСЯ В ОБЫЧНЫЙ РЕЖИМ"
+
+msgid "Options saved."
+msgstr "Настройки сохранены."
+
+msgid "Text size:"
+msgstr "Размер текста:"
+
+msgid "Color Schem:"
+msgstr "Цветовая схема:"
+
+msgid "In black and white"
+msgstr "Черным по белому"
+
+msgid "White on black"
+msgstr "Белым по черному"
+
+msgid "Dark blue on light blue"
+msgstr "Темно-синим по голубому"
+
+msgid "Brown on beige"
+msgstr "Коричневым по бежевому"
+
+msgid "Green on dark brown"
+msgstr "Зеленым по темно-коричневому"
+
+msgid "Image:"
+msgstr "Изображения:"
+
+msgid "Image_background:"
+msgstr "Изображения заднего плана:"
+
+msgid "Font:"
+msgstr "Шрифт:"
+
+msgid "Kerning:"
+msgstr "Интервал между буквами:"
+
+msgid "Space line:"
+msgstr "Интервал между строками:"
+
+msgid "Disable"
+msgstr "Выключить"
+
+msgid "Enable"
+msgstr "Включить"
+
+msgid "Small"
+msgstr "Маленький"
+
+msgid "Normal"
+msgstr "Нормальный"
+
+msgid "Big"
+msgstr "Большой"
+
+msgid "Button colors:"
+msgstr "Цвет фона кнопки"
+
+msgid "Button text colors:"
+msgstr "Цвет текста на кнопке:"
+
+msgid "Button image on:"
+msgstr "Изображение на кнопке включения режима:"
+
+msgid "Button image off:"
+msgstr "Изображение на кнопке выключения режима:"
+
+msgid "No image"
+msgstr "Нет изображения"
+
+msgid "Text buttons on:"
+msgstr "Текст на кнопке включения режима:"
+
+msgid "Text button off:"
+msgstr "Текст на кнопке выключения режима:"
+
+msgid "Reload page:"
+msgstr "Принудительная перезагрузка страницы после выключения режима:"
+
+msgid "Update Options"
+msgstr "Сохранить настройки"
+
+msgid "Reset Options"
+msgstr "Сбросить настройки"
+
+msgid "Autostart panel"
+msgstr "Авто старт панели"
+
+msgid "Scrool panel"
+msgstr "Зафиксировать панель на странице"
+
+msgid "Image size"
+msgstr "При отключении изображений сохранять размер блока изображений"
+
+msgid "FTVI-menu"
+msgstr "Меню-кнопка плагина для слабовидящих"
+
+msgid "Small font size"
+msgstr "Маленький размер шрифта"
+
+msgid "Decrease font size"
+msgstr "Уменьшенный размер шрифта"
+
+msgid "Normal font size"
+msgstr "Нормальный размер шрифта"
+
+msgid "Larger font size"
+msgstr "Увеличенный размер шрифта"
+
+msgid "Large font size"
+msgstr "Большой размер шрифта"
+
+msgid "C"
+msgstr "Ц"
+
+msgid "Color Scheme : Black and white"
+msgstr "Цветовая схема: Черным по белому"
+
+msgid "Color scheme : White on black"
+msgstr "Цветовая схема: Белым по черному"
+
+msgid "Color Scheme : Dark blue on light blue"
+msgstr "Цветовая схема: Темно-синим по голубому"
+
+msgid "Color scheme : Brown on beige"
+msgstr "Цветовая схема: Коричневым по бежевому"
+
+msgid "Color scheme : Green on dark brown"
+msgstr "Цветовая схема: Зеленым по темно-коричневому"
+
+msgid "Enable images"
+msgstr "Включить изображения"
+
+msgid "Black and white images"
+msgstr "Черно-белые изображения"
+
+msgid "Disable images"
+msgstr "Отключить изображения"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Return to normal"
+msgstr "Вернуться в обычный режим"
+
+msgid "Font Settings"
+msgstr "Настройки шрифта"
+
+msgid "Select a font"
+msgstr "Выберите шрифт"
+
+msgid "Spacing between letters"
+msgstr "Интервал между буквами"
+
+msgid "Line Spacing"
+msgstr "Интервал между строками"
+
+msgid "Standard"
+msgstr "Стандартный"
+
+msgid "Average"
+msgstr "Средний"
+
+msgid "Selecting a color scheme"
+msgstr "Выбор цветовой схемы"
+
+msgid "Close panel"
+msgstr "Закрыть панель"
+
+msgid "Default settings"
+msgstr "Вернуть стандартные настройки"
+
+msgid "no description to the image"
+msgstr "нет описания к изображению"
+
+msgid "Picture"
+msgstr "Изображение"
+
+msgid ""
+"When you activate the mode for the visually impaired , to the 'body' is "
+"added to the class of 'visually-impaired-controls-enable', the transition to "
+"the normal class is removed from the 'body'."
+msgstr ""
+"При активации режима для слабовидящих, к 'body' добавляется класс 'visually-"
+"impaired-controls-enable', при переходе в обычный режим класс удаляется из "
+"'body'."
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://984.ru/"
+msgstr "https://984.ru/"
+
+#. Description of the plugin/theme
+msgid "Add to Widget For The Visually Impaired"
+msgstr "Добавляет виджет \"Для слабовидящих\""
+
+#. Author of the plugin/theme
+msgid "984.ru"
+msgstr "984.ru"
+
+#~ msgid "Color scheme : Green on dark brownmsgstr"
+#~ msgstr "Цветовая схема: Зеленым по темно-коричневому"
+
+#~ msgid "Sxema:"
+#~ msgstr "Цветовая схема:"

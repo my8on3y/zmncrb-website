@@ -26,17 +26,10 @@
 		<section class="landing-carousel __section-bottom-margin">
 			<div class="section-background"></div>
 			<div class="__cover-block"></div>	
-			<div class="mega-title">
-				<h1>Приветствуем Вас на официальном сайте</h1>
-				<h2>Центральной районной больницы</h2>
-				<h5>города</h5><h2> Змеиногорска</h2>
+
+			<div class="autoplay main-central-slider">
+				<?php require get_template_directory() . '/slider/home-page-slider.php'; ?>
 			</div>
-			<!-- <div class="autoplay main-central-slider">
-					<div>Ей</div>
-					<div>Все</div>
-					<div>Шелка</div>
-					<div>Цветные</div>
-					</div> -->
 			<div class="container">
 				<div class="row">
 					<div class="control-panel">
