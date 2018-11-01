@@ -26,7 +26,7 @@ $(function () {
 			}, function () {
 				if ($('.sub-menu:hidden')) {
 					$(this).children('#nav-menu > li > a').css({
-						'background-color': '#2A3140',
+						'background-color': 'transparent',
 						'color': '#fff'
 					})
 				};
@@ -74,6 +74,7 @@ $(function () {
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 5000,
+			zIndex: 500
 		});
 	});
 });

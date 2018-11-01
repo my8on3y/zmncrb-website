@@ -30,15 +30,11 @@
 			<div class="autoplay main-central-slider">
 				<?php require get_template_directory() . '/slider/home-page-slider.php'; ?>
 			</div>
-			<div class="container">
-				<div class="row">
-					<div class="control-panel">
-					<!-- Изменить шрифт для кнопок !!растягивающийся -->
+				<div class="control-panel">
 						<a href="#" class="-control-panel_button"><i class="fa fa-headset"></i>Записаться на прием</a>
 						<a href="<?php echo get_page_by_path( '/time-table-page' ) -> guid ?>" class="-control-panel_button"><i class="fa fa-clock"></i>Расписание приемов</a>
 						<a href="#" class="-control-panel_button"><i class="fa fa-phone-square"></i>Контакты</a>
 						<a href="#" class="-control-panel_button"><i class="fa fa-comment"></i>Обратная связь</a>
-					</div>
 				</div>
 		</section>
 

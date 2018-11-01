@@ -31,13 +31,13 @@
 						<div class="top-informer"><i class="fa fa-calendar-alt"></i><?php echo ' ' . date( "d.m.Y" ) ?></div>
 						<div class="top-informer"><i class="fa fa-thermometer-half"></i><?php 
 
-								if( file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc') ) :
-								$json = file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc');
-								$JSON_Array = json_decode( $json, true );
-								$JSON_value = round ( $JSON_Array['list'][0]['main']['temp'] - 273.15 ); 
-								else: $json = 'обновление';
-								endif;
-								echo ' ' .  $JSON_value . '&deg C'; 
+								// if( @file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc') ) :
+								// $json = file_get_contents( 'http://api.openweathermap.org/data/2.5/forecast?id=1485042&APPID=13aaa71d9a2f582f139fd7cc6ec5b3cc');
+								// $JSON_Array = json_decode( $json, true );
+								// $JSON_value = round ( $JSON_Array['list'][0]['main']['temp'] - 273.15 ); 
+								// else: $json = 'обновление';
+								// endif;
+								// echo ' ' .  $JSON_value . '&deg C'; 
 							?>
 						</div>
 						<div class="top-informer .geo-location"><i class="fa fa-map-marker-alt"></i> Zmeinogorsk</div>

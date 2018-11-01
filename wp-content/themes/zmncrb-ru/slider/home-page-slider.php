@@ -8,8 +8,7 @@
  */
 ?>
 
-<div id="slide_1" class="slide">
-    <div class="_decorate_block">
-        qwe
+<div id="slide_1" class="slideN">
+
     </div>
 </div>    
