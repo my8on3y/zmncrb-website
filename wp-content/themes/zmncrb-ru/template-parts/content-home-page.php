@@ -25,8 +25,7 @@
 
 		<section class="landing-carousel">
 			<div class="section-background"></div>
-			<div class="__cover-block"></div>	
-
+			<div class="__cover-block"></div>
 			<div class="autoplay main-central-slider">
 				<?php require get_template_directory() . '/slider/home-page-slider.php'; ?>
 			</div>
@@ -37,7 +36,6 @@
 						<a href="#" class="-control-panel_button"><i class="fa fa-comment"></i>Обратная связь</a>
 			</div>
 		</section>
-
 		<section id="parral" class="content-block __section-bottom-margin">
 			<div class="__cover-block"></div>
 			<div class="container">
@@ -123,7 +121,7 @@
 				<div class="container">
 				<div class="__section-separator"><h3 class="-a-word __decor-line-in-headline"><i class="fa fa-clipboard-list"></i> Состав ЦРБ</h3></div>
 					<div class="row">
-						<table class="text-center">
+						<table class="text-center"s>
 							<tr>
 								<th><i class="fa fa-bed"></i></th>
 								<th><i class="fa fa-hospital-alt"></i></th>
@@ -189,5 +187,6 @@
 			</section>
 		<?php
 		the_content();
+		get_sidebar();
 		
 ?>

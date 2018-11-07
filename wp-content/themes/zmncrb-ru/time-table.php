@@ -39,7 +39,11 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
                         $queryArr = $wpdb -> get_results("SELECT * FROM wp_tt_doctors WHERE specialty = '$spec_value'");
                         echo '<span style="margin-bottom: 10px;">'. $spec_value .  '</span><br>';
                         foreach ($queryArr as $query) {
-                            echo '<li class="doc_link_ajax" specialty="' . $spec_value . '" queryVal="' . $query -> id .'">' . $query -> last_name .' '. $query -> name . ' ' .  $query -> patronymic . '</li>';                           
+                            $attr = $query -> tt_disabled;
+                            $li_style = '';
+                            if ($attr == 1) { $li_style = "background-color: red"; }
+                            echo '<li class="doc_link_ajax" style="' . $li_style . '" specialty="' . $spec_value . '" queryVal="' . $query -> id .'" tt_disabled="' . $query -> tt_disabled . '">' . $query -> last_name .' '. $query -> name . ' ' .  $query -> patronymic . '</li>';                           
+                            
                         }
                         echo '<hr>';
                     }
@@ -52,7 +56,8 @@ $tt_disabled    = $wpdb -> get_col( "SELECT disabled FROM wp_tt_doctors" );
                     <?php
                         echo '<h1 id="tt_doc_name" class="inform-title">Расписание приема врачей</h1><br>'; 
                         echo '<i class="fa fa-tags" style="font-size: 1.1em; color: #6d6c6c;"></i><span> </span><span id="tt_doc_specialty">специальность</span><br>';
-                        echo '<div class="tt_card_table">';
+                        echo '<div id="tt_card_table" class="tt_card_table">';
+                        echo '<div id="tt_card_table_disabled" class="tt_card_table_disabled_layer"><h2>Временно нет приёма!!!</h2></div>';
                         for( $i = 0; $i < 5; $i++ ) {
                             echo '<div class="tt_card">';
                             switch( $i ) {

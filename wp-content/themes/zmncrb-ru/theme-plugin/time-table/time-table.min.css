@@ -65,9 +65,22 @@
     margin-top: 50px;
 }
 .time-table-time-board .inform-title {
+    position: relative;
     background-color: rgb(17, 57, 90);
     color: #fff;
     padding: 15px;
+}
+
+.time-table-time-board #tt_card_table_disabled {
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(165, 42, 83);
+    visibility: hidden;
 }
 
 .time-table-time-board .tt_hour {

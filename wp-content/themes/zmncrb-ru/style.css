@@ -502,8 +502,23 @@ figure {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+	border: 1px solid #666;
 }
 
+table th {
+	padding: 8px;
+	border: 1px solid #666;
+}
+
+table td {
+	padding: 8px;
+	border: 1px solid #666;
+}
+
+table tr {
+	padding: 8px;
+	border: 1px solid #666;
+}
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

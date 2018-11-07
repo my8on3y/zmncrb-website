@@ -248,7 +248,7 @@ body h2 {
   text-align: center;
   list-style: none;
   float: left;
-  width: 160px;
+  width: 220px;
   z-index: 2000;
 }
 
@@ -312,7 +312,7 @@ body h2 {
 }
 
 #nav-menu li .sub-menu > li:first-child a::before {
-  content: url('../img/icon/share.svg');
+
 }
 
 
@@ -531,8 +531,7 @@ body h2 {
   position: relative;
   border-bottom: 6px solid #6b6b6b;
   font-family: "roboto-light", sans-serif;
-  height: 50vh;
-  margin-bottom: 120px;
+  min-height: 70vh;
 }
 
 .landing-carousel .__cover-block {
@@ -578,17 +577,16 @@ body h2 {
 }
 
 .control-panel {
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10vh;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 1000;
-  bottom: -50px;
   width: 100%;
 }
 
@@ -601,15 +599,15 @@ body h2 {
   width: 12vw;
   color: #fff;
   background-color: #1e1e1e;
-  opacity: 0.8;
+  opacity: 0.7;
   overflow: hidden;
-  -webkit-transition-property: opacity, background-color;
-  -o-transition-property: opacity, background-color;
-  transition-property: opacity, background-color;
-  -webkit-transition-duration: 0.9s;
-       -o-transition-duration: 0.9s;
-          transition-duration: 0.9s;
-  text-decoration: none;
+  text-decoration: none;   
+  -webkit-transition-property: background-color;
+  -o-transition-property:background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.6s;
+       -o-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .control-panel .-control-panel_button i {
@@ -617,9 +615,8 @@ body h2 {
   margin-bottom: 12px;
 }
 
-.control-panel .-control-panel_button:hover {
-  background: rgb(50, 217, 195);
-  opacity: 1;
+.control-panel .-control-panel_button:hover{
+  background-color: #D93240;
 }
 
 .control-panel .-control-panel_button .fa {
@@ -762,6 +759,22 @@ body h2 {
 .footer-section .informers-section {
   position: relative;
   z-index: 5000;
+}
+
+.include-inform table{
+  border-style: none;
+}
+
+.include-inform table tr td {
+  border-style: none;
+}
+
+.include-inform table tr th {
+  border-style: none;
+}
+
+.include-inform table tr {
+  border-style: none;
 }
 
 .organisation-work-time table {
