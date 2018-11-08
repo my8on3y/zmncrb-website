@@ -68,13 +68,13 @@ $(function () {
 		});
 	})(jQuery);
 
+	// carousel slick
 	$(document).ready(function () {
-		$('.autoplay').slick({
+		$('.main-central-slider').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 5000,
-			zIndex: 500
+			autoplaySpeed: 7000
 		});
 	});
 });
@@ -120,6 +120,11 @@ function triggerStartNum() {
 	}
 };
 
-
+	//animate.css
+	$(document).ready(function(){
+		$('.inform-slider-block').addClass('animated fadeInLeft');
+		$('.slide_1 h1').addClass('animated fadeIn delay-1s');
+		$('.inform-slider-block, .slide_1 h1').css({'visibility' : 'visible'});
+});
 
 

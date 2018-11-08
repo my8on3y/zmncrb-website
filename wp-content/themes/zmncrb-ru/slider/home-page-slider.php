@@ -8,7 +8,10 @@
  */
 ?>
 
-<div id="slide_1" class="slideN">
-
-    </div>
+<div class="slide_1">
+    <div class="inform-slider-block"></div>
+    <h1 class="text-center">добро пожаловать</h1>
+</div>    
+<div class="slide_2">
+    <h1 class="text-center">Вам к Нам</h1>
 </div>    
